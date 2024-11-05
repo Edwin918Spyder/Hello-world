@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reise Abenteuer</title>
+    <title>Reise Abenteuer Mockup</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon-32x32.png" type="image/png">
     <style>
@@ -174,9 +174,9 @@
 </head>
 <body>
     <!-- Cookie-Banner -->
-    <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner">
         <span>Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. Mehr erfahren in unserer <a href="datenschutz.html" style="color: #f8d7da; text-decoration: underline;">Datenschutzerklärung</a>.</span>
-        <button onclick="acceptCookies()">Akzeptieren</button>
+        <button>Akzeptieren</button>
     </div>
 
     <!-- Navigationsleiste mit Logo -->
@@ -210,10 +210,9 @@
         <div class="about-content">
             <img src="Safar.webp" alt="Reiseabenteuer" class="about-image">
             <div class="about-text">
-                <p>2015 begannen wir, als kleine Gruppe von Freunden, das Reisen für uns zu entdecken. Was als spontane Wochenendausflüge begann, entwickelte sich schnell zu einer Leidenschaft für das Erkunden unbekannter Orte und Kulturen. Unser erstes gemeinsames Abenteuer führte uns in die Natur, wo wir die Schönheit unserer Umgebung mit neuen Augen sahen. Diese ersten Reisen weckten in uns den Wunsch, noch mehr von der Welt zu sehen und uns von ihren Wundern inspirieren zu lassen.</p>
-                <p>Aus diesen Anfängen entstand eine tiefere Verbindung zur Natur und eine Wertschätzung für die Vielfalt der Erde. Die Erlebnisse aus diesen Reisen stärkten unsere Freundschaft und unsere Entschlossenheit, weiter zu erkunden.</p>
-                <p>2019 erfüllten wir uns schließlich einen Traum und begaben uns auf eine Safari in Afrika. Früh morgens, im sanften Licht der aufgehenden Sonne, wurden wir Zeugen magischer Momente – Zebras und Gnus zogen in Scharen an uns vorbei, Elefanten tranken an einem Wasserloch, und ein stolzes Löwenrudel ruhte auf einer sonnigen Lichtung. Diese Begegnungen mit der Tierwelt ließen uns die Bedeutung des Naturschutzes noch mehr schätzen und inspirierten uns, unsere Abenteuer mit anderen zu teilen.</p>
-                <p>Seitdem haben wir es uns zur Aufgabe gemacht, die Schönheit und Vielfalt unserer Welt zu erleben und unsere Geschichten mit anderen zu teilen. Jede Reise ist ein neues Abenteuer, und wir freuen uns darauf, noch mehr davon zu erleben.</p>
+                <p>2015 begannen wir, als kleine Gruppe von Freunden, das Reisen für uns zu entdecken. Was als spontane Wochenendausflüge begann, entwickelte sich schnell zu einer Leidenschaft für das Erkunden unbekannter Orte und Kulturen.</p>
+                <p>Diese ersten Reisen weckten in uns den Wunsch, noch mehr von der Welt zu sehen und uns von ihren Wundern inspirieren zu lassen.</p>
+                <p>2019 erfüllten wir uns schließlich einen Traum und begaben uns auf eine Safari in Afrika.</p>
             </div>
         </div>
     </section>
@@ -263,12 +262,12 @@
             Felder mit <span style="color: red;">*</span> sind Pflichtfelder
         </div>
         
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xldejqgy" method="POST">
+        <form class="contact-form">
             <label for="firstname" class="required">Vorname</label>
-            <input type="text" id="firstname" name="firstname" required>
+            <input type="text" id="firstname" name="firstname">
 
             <label for="lastname" class="required">Nachname</label>
-            <input type="text" id="lastname" name="lastname" required>
+            <input type="text" id="lastname" name="lastname">
 
             <label for="phone">Telefon</label>
             <div style="display: flex; gap: 10px;">
@@ -278,17 +277,17 @@
                     <option value="+43">Österreich (+43)</option>
                     <option value="+41">Schweiz (+41)</option>
                 </select>
-                <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{3,}">
+                <input type="tel" id="phone" name="phone" placeholder="1234567890">
             </div>
 
             <label for="email" class="required">E-Mail-Adresse</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
 
             <label for="subject" class="required">Thema</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" id="subject" name="subject">
 
             <label for="message" class="required">Nachricht</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message"></textarea>
 
             <button type="submit">Absenden</button>
         </form>
@@ -309,54 +308,8 @@
             <li><a href="#stories">Reiseberichte</a></li>
             <li><a href="#contact">Kontakt</a></li>
             <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="#datenschutz">Datenschutz</a></li>
         </ul>
     </footer>
-
-    <script>
-        // Funktion zum Abspielen des Videos bei Hover
-        function setupHoverPlay(videoId) {
-            const video = document.getElementById(videoId);
-            video.addEventListener("mouseenter", () => video.play());
-            video.addEventListener("mouseleave", () => video.pause());
-        }
-
-        // Aufrufe für jedes Video
-        setupHoverPlay("sahara-video");
-        setupHoverPlay("rocky-mountains-video");
-
-        // Cookie-Banner Funktionen
-        function acceptCookies() {
-            document.getElementById("cookieBanner").style.display = "none";
-            localStorage.setItem("cookiesAccepted", "true");
-        }
-
-        // Prüfen, ob Cookies bereits akzeptiert wurden
-        window.onload = function() {
-            if (localStorage.getItem("cookiesAccepted") === "true") {
-                document.getElementById("cookieBanner").style.display = "none";
-            }
-        };
-
-        // Formularvalidierung für Pflichtfelder ohne Leerzeichen
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            const fields = ["firstname", "lastname", "email", "subject", "message"];
-            let isValid = true;
-
-            fields.forEach(function(fieldId) {
-                const field = document.getElementById(fieldId);
-                if (!field.value.trim()) {  // Prüft auf nur Leerzeichen
-                    isValid = false;
-                    field.style.borderColor = "red";  // Zeigt Fehler durch rote Umrandung
-                } else {
-                    field.style.borderColor = "";  // Entfernt Fehleranzeige
-                }
-            });
-
-            if (!isValid) {
-                alert("Bitte füllen Sie alle Pflichtfelder korrekt aus.");
-                event.preventDefault(); // Verhindert das Absenden des Formulars
-            }
-        });
-    </script>
 </body>
 </html>
