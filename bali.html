@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Reisebericht 2017</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Layout für Bilder und Text */
+        .story-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 10px 0; /* Geringerer Abstand zwischen den Abschnitten */
+        }
+        .story-section img {
+            width: 100%;
+            max-width: 500px; /* Größere maximale Bildbreite */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .story-section:nth-child(even) {
+            flex-direction: row-reverse; /* Bild rechts für jede zweite Sektion */
+        }
+        .story-text {
+            max-width: 700px; /* Breitere maximale Textbreite */
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+            text-align-last: left; /* Nur die letzte Zeile linksbündig */
+            hyphens: auto; /* Automatische Silbentrennung */
+            word-break: break-word; /* Zeilenumbruch bei langen Wörtern */
+        }
+        .story-text p {
+            margin: 0; /* Entfernt den Abstand zwischen den Absätzen */
+        }
+        /* Abstand im Header und Anpassung für den Titel */
+        header {
+            margin-bottom: 10px; /* Weniger Abstand unter dem Header */
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0; /* Entfernt zusätzlichen Abstand unter dem Titel */
+            padding-bottom: 10px; /* Leichter Abstand für besseren Lesefluss */
+            border-bottom: 1px solid #ddd; /* Trennungslinie für visuelle Trennung */
+        }
+        /* Stil für den Pfeil-Button */
+        .back-arrow {
+            position: fixed;
+            top: 20px; /* Positioniert den Button am oberen Rand */
+            left: 20px; /* Positioniert den Button links */
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.5em;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .back-arrow:hover {
+            background-color: #555; /* Änderung der Farbe bei Hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pfeil-Button oben links, der zur Hauptseite zurückführt -->
+    <a href="index.html" class="back-arrow">&#8592;</a>
+
+    <header>
+        <h1>Reisebericht: Bali, Indonesien 2017</h1>
+    </header>
+
+    <section class="story-section">
+        <img src="images/Bali Strand.webp" alt="Strand auf Bali">
+        <div class="story-text">
+            <p>Unsere Reise nach Bali begann mit einem spektakulären Blick auf die tropische Landschaft von unserem Infinity-Pool aus. Das Wasser schien endlos in den Horizont zu fließen, und die grünen Hügel schimmerten sanft im goldenen Licht des Morgens. Die Luft war warm und duftete nach exotischen Blüten, während wir uns in der Ruhe des Ortes verloren.</p><p>Es war der perfekte Start für unser Abenteuer, das uns tief in die Schönheit und Geheimnisse dieser Insel führen würde. Die friedliche Atmosphäre, die uns jeden Morgen beim Aufwachen begrüßte, ließ die Zeit langsamer vergehen. Wir konnten es kaum erwarten, die Insel zu erkunden und all ihre Facetten kennenzulernen.</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <img src="images/Bali Monkey.webp" alt="Affe auf Bali">
+        <div class="story-text">
+            <p>Am zweiten Tag besuchten wir den berühmten Affenwald von Ubud, ein faszinierender Ort, der von zahlreichen verspielten Makaken bevölkert ist. Diese neugierigen kleinen Geschöpfe waren überall – in den Bäumen, auf den Wegen und sogar auf unseren Schultern.</p><p>Einer von ihnen klaute fast unser Wasser, bevor er in die Büsche verschwand. Es war ein magischer Moment, so nah an den Tieren zu sein und ihre natürliche Verspieltheit zu beobachten. Dieser Ort verkörperte die wilde, unverfälschte Seite Balis und erinnerte uns daran, wie wichtig der Schutz solcher Lebensräume ist.</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <img src="images/Bali Nature.webp" alt="Naturlandschaft auf Bali">
+        <div class="story-text">
+            <p>Nach einem langen, aufregenden Tag entschieden wir uns für eine Wanderung tief in die Wälder von Bali. Die Wanderung führte uns zu einem abgelegenen Wasserfall, dessen donnerndes Wasser uns augenblicklich erfrischte und uns die Anstrengungen der Wanderung vergessen ließ.</p><p>Die Szenerie war wie aus einem Traum: dichter Dschungel, exotische Pflanzen und das stetige Rauschen des Wasserfalls. Die Geräusche der Vögel und das sanfte Flüstern des Windes machten uns bewusst, wie überwältigend und beruhigend die Natur sein kann.</p><p>Wir blieben dort für Stunden, genossen die Schönheit und die Abgeschiedenheit dieses versteckten Ortes, der uns das Gefühl gab, ein Teil von Balis unberührter Natur zu sein.</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <img src="images/Bali Pärchen.webp" alt="Pärchen auf Bali">
+        <div class="story-text">
+            <p>Einer der Höhepunkte unserer Reise war der Besuch eines der vielen spirituellen Tempel Balis, eingebettet in die atemberaubende Landschaft und umgeben von mystischen Statuen und verzierter Architektur. Die Harmonie und Ruhe, die der Tempel ausstrahlte, war fast greifbar und zog uns sofort in ihren Bann.</p><p>Hier nahmen wir uns einen Moment, um über die tiefe spirituelle Bedeutung dieses Ortes nachzudenken und die reiche Kultur, die Bali ausmacht, zu spüren. Es war eine unglaubliche Erfahrung, diese Momente gemeinsam zu erleben, und wir fühlten uns gesegnet, Teil dieser spirituellen Welt zu sein.</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <img src="images/Bali Monkey.webp" alt="Affe auf Bali">
+        <div class="story-text">
+            <p>Später an diesem Tag, während wir die Straßen von Ubud erkundeten, begegneten wir erneut einigen der berühmten balinesischen Makaken, die in dieser Gegend zu Hause sind. Diese Affen waren völlig unbeeindruckt von den Menschen um sie herum und gingen ihren eigenen Angelegenheiten nach.</p><p>Es war ein unglaubliches Gefühl, so nah an diesen Geschöpfen zu sein und ihre gewitzte Art zu beobachten, mit der sie ihre Umgebung erkundeten. Die Mischung aus geschäftigen Straßen, traditioneller Architektur und der Nähe zur Natur machte diesen Tag zu einem unserer unvergesslichsten auf Bali.</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <img src="images/Bali Manyak.webp" alt="Bali Manyak Landschaft">
+        <div class="story-text">
+            <p>Am letzten Tag unserer Reise besuchten wir die berühmten Reisfelder von Bali Manyak. Die sattgrünen Terrassen erstreckten sich über die Hügel und boten ein atemberaubendes Panorama. Hier schien die Zeit stillzustehen. Die Einheimischen arbeiteten geduldig auf den Feldern, und wir fühlten uns wie in eine andere Zeit versetzt.</p><p>Der Anblick dieser endlosen Felder und die harte Arbeit der Menschen hier lehrten uns Demut und Respekt vor der Natur und ihren Hütern. Wir verließen Bali mit einer Kamera voller Bilder und Herzen voller Erinnerungen, die uns ein Leben lang begleiten werden.</p>
+        </div>
+    </section>
+
+</body>
+</html>
